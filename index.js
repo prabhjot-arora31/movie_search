@@ -50,14 +50,7 @@ async function call() {
             <center><div style='padding:0.5rem' class='overview'><h4 style='text-align:center'><u>Overview: </u>${
               ele.overview
             }</h4></div></center>
-            ` +
-        `
-            ${
-              window.matchMedia("(max-width:480px)").matches
-                ? "<button>Overview</button>"
-                : ""
-            }
-    `;
+            ` ;
       document.getElementById("main").appendChild(div);
     });
   }
