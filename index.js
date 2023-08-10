@@ -46,6 +46,9 @@ async function call() {
               Number(ele.vote_average)
             )}'>${ele.vote_average}</h3>
             </div>
+            <h5 style='text-align:center ; margin-top:'0.6rem'>Release Date: ${
+              ele.release_date
+            }</h5>
             <center><div style='padding:0.5rem' class='overview'><h4 style='text-align:center'><u>Overview: </u>${
               ele.overview
             }</h4></div></center>
@@ -94,6 +97,8 @@ document.getElementById("btn").addEventListener("click", async () => {
                     Number(ele.vote_average)
                   )}'>${ele.vote_average}</h3>
                   </div>
+            <h5 style='text-align:center'>Release Date: ${ele.release_date}</h5>
+
                   <center><div style='padding:0.5rem' class='overview'><h4 style='text-align:center'><u>Overview:</u>&nbsp; &nbsp;${
                     ele.overview ? ele.overview : "not available"
                   }</h4></div></center>
