@@ -31,8 +31,7 @@ async function call() {
       //   div.classList.add(`c${count}`);
       //   count = count + 1;
       // https://image.tmdb.org/t/p/original
-      div.innerHTML =
-        `
+      div.innerHTML = `
     <img src="${
       ele.poster_path
         ? `https://image.tmdb.org/t/p/original${ele.poster_path}`
@@ -50,7 +49,7 @@ async function call() {
             <center><div style='padding:0.5rem' class='overview'><h4 style='text-align:center'><u>Overview: </u>${
               ele.overview
             }</h4></div></center>
-            ` ;
+            `;
       document.getElementById("main").appendChild(div);
     });
   }
@@ -80,8 +79,7 @@ document.getElementById("btn").addEventListener("click", async () => {
             //   div.classList.add(`c${count}`);
             //   count = count + 1;
             // https://image.tmdb.org/t/p/original
-            div.innerHTML =
-              `
+            div.innerHTML = `
           <img src="${
             ele.poster_path
               ? `https://image.tmdb.org/t/p/original${ele.poster_path}`
@@ -99,11 +97,7 @@ document.getElementById("btn").addEventListener("click", async () => {
                   <center><div style='padding:0.5rem' class='overview'><h4 style='text-align:center'><u>Overview:</u>&nbsp; &nbsp;${
                     ele.overview ? ele.overview : "not available"
                   }</h4></div></center>
-                  ` +
-              `
-                    window.matchMedia("(max-width:480px)").matches ? (
-                      <button>Overview</button>
-                    ) : null
+                  
                   
           `;
             document.getElementById("main").appendChild(div);
